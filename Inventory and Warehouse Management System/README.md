@@ -1,4 +1,4 @@
-## Inventory and Warehouse Management System
+# Inventory and Warehouse Management System
 ## 📌 Project Overview
 This project is part of my **SQL Internship Projects**.  
 The aim is to design a **SQL backend system** for tracking warehouse inventory, managing suppliers, and automating stock alerts.  
