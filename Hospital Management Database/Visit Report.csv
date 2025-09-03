@@ -1,0 +1,4 @@
+patient_name,doctor_name,visit_date,diagnosis,amount,paid
+"Sakshi Khangar","Dr. A. Kumar",2025-09-01,"Heart Pain",5000.00,No
+"Sakshi Khangar","Dr. A. Kumar",2025-09-01,"Heart Pain",5000.00,No
+"Rahul Sharma","Dr. S. Patel",2025-09-02,Migraine,2000.00,Yes
