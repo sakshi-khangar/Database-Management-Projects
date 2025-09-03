@@ -1,0 +1,4 @@
+post_id,content,user_id,total_likes,total_comments
+1,"Hello World!",1,2,2
+3,"SQL Analytics Project!",3,2,2
+2,"Learning PostgreSQL is fun!",2,1,2
