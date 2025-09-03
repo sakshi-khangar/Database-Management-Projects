@@ -27,9 +27,9 @@ The database consists of four main tables:
 - Stored procedures to automate billing.
 - Triggers to update patient status upon bill payment.
 - Queries to generate reports:
--- Doctor appointments
--- Pending bills
--- Complete visit report
+- Doctor appointments
+- Pending bills
+- Complete visit report
 
 ## Conclusion
 This project demonstrates a simple and effective hospital management system. 
