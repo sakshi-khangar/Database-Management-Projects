@@ -1,0 +1,4 @@
+Trigger,Event,Table,Statement,Timing,Created,sql_mode,Definer,character_set_client,collation_connection,"Database Collation"
+trg_update_evidence,UPDATE,evidence,"BEGIN
+    SET NEW.last_updated = CURRENT_TIMESTAMP;
+END",BEFORE,"2025-09-03 20:28:32.61","ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",root@localhost,utf8mb4,utf8mb4_0900_ai_ci,utf8mb4_0900_ai_ci
