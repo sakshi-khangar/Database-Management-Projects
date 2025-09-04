@@ -1,0 +1,13 @@
+Trigger,Event,Table,Statement,Timing,Created,sql_mode,Definer,character_set_client,collation_connection,"Database Collation"
+trg_calculate_gpa,INSERT,grades,"BEGIN
+    UPDATE Grades g
+    JOIN (
+        SELECT student_id, semester_id, SUM(c.credits * gpa)/SUM(c.credits) AS semester_gpa
+        FROM Grades
+        JOIN Courses c ON Grades.course_id = c.course_id
+        WHERE student_id = NEW.student_id AND semester_id = NEW.semester_id
+        GROUP BY student_id, semester_id
+    ) t
+    ON g.student_id = t.student_id AND g.semester_id = t.semester_id
+    SET g.gpa = t.semester_gpa;
+END",AFTER,"2025-09-03 21:30:37.84","ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",root@localhost,utf8mb4,utf8mb4_0900_ai_ci,utf8mb4_0900_ai_ci
