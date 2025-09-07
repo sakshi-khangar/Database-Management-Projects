@@ -1,0 +1,7 @@
+country,week,weekly_confirmed,weekly_deaths,weekly_recovered
+India,2020-09,3,0,0
+India,2020-10,33,0,3
+Italy,2020-09,1700,41,83
+Italy,2020-10,4538,131,309
+USA,2020-09,74,1,0
+USA,2020-10,223,15,2
